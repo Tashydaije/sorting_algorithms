@@ -35,7 +35,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *iterate, *insert, *temp;
 
-	if (*list == NULL || list == NULL || (*list)->next == NULL)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
 	for (iterate = (*list)->next; iterate != NULL; iterate = temp)
